@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Университет полезных профессий</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -86,39 +87,45 @@
             </div>
         </div>
     </section>
-    <div class="box">
-        <h1 class="mailing">
-            Подпишись на рассылку
-        </h1>
-        <form action="php/hander.php" method="get" class="form">
-            <input type="text" name="email" placeholder="Ваше Email" class="frame">
-            <button type="submit" class="button">Подписаться</button>
-        </form>
-    </div>
+    <section class="mailing_box">
+       <div class="box">
+           <h1 class="mailing">
+               Подпишись на рассылку
+           </h1>
+           <div>
+               <form action="php/hander.php" method="get" class="form">
+               <input type="text" name="email" placeholder="Ваше Email" class="frame">
+               <button type="submit" class="button">Подписаться</button>
+               </form>
+           </div>
+        </div>
+    </section>
     <footer class="footer">
-        <div><img src="images/logo.svg" alt="Sato" class="logo_footer"></div>
-        <div class="footer_link">
-            <a href="#" class="blue_text">Абитуриентам</a>
-            <a href="#" class="black_text">Подготовка</a>
-            <a href="#" class="black_text">Поступление</a>
-            <a href="#" class="black_text">Проживание</a>
-        </div>
-        <div class="footer_link">
-            <a href="#" class="blue_text">Студентам</a>
-            <a href="#" class="black_text">Расписание</a>
-            <a href="#" class="black_text">Факультативы</a>
-            <a href="#" class="black_text">Оплата обучения</a>
-        </div>
-        <div class="footer_link">
-            <a href="#" class="blue_text">Трудоустройство</a>
-            <a href="#" class="black_text">Вакансии</a>
-            <a href="#" class="black_text">Заявки</a>
-            <a href="#" class="black_text">Работодателям</a>
-        </div>
-        <div class="footer_link">
-            <a href="#" class="blue_text">Пресс-служба</a>
-            <a href="#" class="black_text">pr@sato.com</a>
-            <a href="#" class="black_text">+7 999 999 99 99</a>
+           <div><img src="images/logo.svg" alt="Sato" class="logo_footer"></div>
+           <div class="footer_block">
+            <div class="footer_link">
+                <a href="#" class="blue_text">Абитуриентам</a>
+                <a href="#" class="black_text">Подготовка</a>
+                <a href="#" class="black_text">Поступление</a>
+                <a href="#" class="black_text">Проживание</a>
+            </div>
+            <div class="footer_link">
+                <a href="#" class="blue_text">Студентам</a>
+                <a href="#" class="black_text">Расписание</a>
+                <a href="#" class="black_text">Факультативы</a>
+                <a href="#" class="black_text">Оплата обучения</a>
+            </div>
+            <div class="footer_link">
+                <a href="#" class="blue_text">Трудоустройство</a>
+                <a href="#" class="black_text">Вакансии</a>
+                <a href="#" class="black_text">Заявки</a>
+                <a href="#" class="black_text">Работодателям</a>
+            </div>
+            <div class="footer_link">
+                <a href="#" class="blue_text">Пресс-служба</a>
+                <a href="#" class="black_text">pr@sato.com</a>
+                <a href="#" class="black_text">+7 999 999 99 99</a>
+            </div>
         </div>
     </footer>
 <script src="js/app.js"></script>
