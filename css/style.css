@@ -33,7 +33,6 @@
     max-width: 801px;
     padding-left: 120px;
     padding-top: 226px;
-
 }
 
 .menu_link {
@@ -119,27 +118,23 @@
 
 .mobile {
     color: white;
-
     height: 840px;
     background: url('../images/mobil.jpg') center center no-repeat;
 }
 
 .copywriting {
     color: white;
-
     height: 840px;
     background: url('../images/copywriting.jpg') center center no-repeat;
 }
 
 .web {
-
     height: 840px;
     background: url('../images/web.jpg') center center no-repeat;
 }
 
 .marketing {
     color: white;
-
     height: 840px;
     background: url('../images/marketing.jpg') center center no-repeat;
 }
@@ -153,7 +148,6 @@
 
 .sound {
     color: white;
-
     height: 840px;
     background: url('../images/sound.jpg') center center no-repeat;
 }
@@ -163,36 +157,42 @@
     text-align: center;
     margin-bottom: 168px;
 }
-
+.wrapper{
+    max-width: 1619px;
+    margin: 0 auto;
+    padding: 0 20px 169px;
+}
 .why {
-    font: normal 70px/85px 'Open Sans', sans-serif;
-    padding-left: 171px;
+    font: normal 70px/85px 'Open Sans', sans-serif; 
+    padding-bottom: 82px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
-    max-width: 1579px;
-    margin: 0 auto;
-    padding: 0 20px 169px;
+    grid-template-columns: repeat(auto-fill, minmax(505px, 1fr));
+    grid-gap: 16px;
+
 }
 
 .cell {
+    max-width: 505px;
+    height: 167px;
     outline: 2px solid #959595;
     display: flex;
     align-items: center;
+    margin: 16px;
 }
 
 .big {
     font: 300 normal 60px Open Sans, sans-serif;
-    padding: 30px;
+    padding: 45px 30px 48px 51px;
 }
 
 .box_text {
     max-width: 267px;
     font: normal 24px/142.69% Roboto, sans-serif;
     color: #003BD1;
+    padding-right: 30px;
 }
 
 .mailing_box {
@@ -204,10 +204,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1579px;
-    margin: 0 auto;
     height: 430px;
-    padding: 0 20px;
 }
 
 .mailing {
@@ -230,10 +227,10 @@
     box-sizing: border-box;
     border-radius: 5.39553px;
     padding: 21.5821px 26.9776px;
+    margin: 10px;
 }
 
 .button {
-    padding: 21.5821px 40.4665px;
     background: #003BD1;
     border-radius: 5.39553px;
     font-family: Open Sans, sans-serif;
@@ -242,6 +239,9 @@
     margin-left: 22px;
     border: 0;
     font-size: 20px;
+    width: 270px;
+    height: 65px;
+    margin: 10px;
 }
 
 .button:hover {
@@ -256,15 +256,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-}
-
-.footer_block {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 20px;
-
+    margin: 90px auto 95px;
 }
 
 .footer_link {
@@ -285,15 +277,27 @@
     color: black;
     padding-bottom: 15px;
 }
-@media screen and (max-width: 1157px) 
 
-@media screen and (max-width: 591px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1220px) {
+    .frame, .button {
+        max-width: 441px;
+        height: 65px;
     }
+    .mobile, .copywriting, .web, .marketing, .applied, .sound {
+    height: 526px;
+}
+    .form {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    }
+}
 
-    .box {
-        justify-content: center;
+@media (max-width: 998px) {
+    .grid {
+        flex-direction: column;
+        max-width: 20px auro;
         align-items: center;
+        flex-grow: 1;
     }
 }
